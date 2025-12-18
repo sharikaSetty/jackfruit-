@@ -48,7 +48,7 @@ def weather(lat, lon):
         data = response.json()
 
     except Exception as e:
-        sys.exit(f"❌ Error fetching weather data: {e}")
+        sys.exit(f" Error fetching weather data: {e}")
 
     temp_k = data["main"]["temp"]
     temp_c = round(temp_k - 273.15, 1)
